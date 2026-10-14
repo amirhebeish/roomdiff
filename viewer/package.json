@@ -1,0 +1,12 @@
+{
+  "name": "roomdiff-viewer",
+  "private": true,
+  "description": "Builds roomdiff/viz/viewer_bundle.js (three.js + viewer code, inlined into every report).",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --minify --format=iife --target=es2019 --outfile=../roomdiff/viz/viewer_bundle.js && cp template.html ../roomdiff/viz/viewer_template.html"
+  },
+  "devDependencies": {
+    "esbuild": "0.20.2",
+    "three": "0.160.0"
+  }
+}

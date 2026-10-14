@@ -1,0 +1,1581 @@
+{
+  "headline": "5 changes found: 5 moved. 20 objects unchanged, 4 could not be checked (not visible in both recordings).",
+  "units": "m",
+  "frame": "z up, floor at z=0; x points along the first 'before' camera's view, y to its left",
+  "changes": [
+    {
+      "id": "C1",
+      "type": "moved",
+      "label": "chair",
+      "description": "The chair was moved 0.9 m (0.8 m to the left and 0.5 m closer): it was at the far side of the table and is now at the oven side of the table. (3 views of the second recording see empty space at its old spot.)",
+      "confidence": 0.782,
+      "displacement_m": [
+        0.72,
+        -0.579,
+        -0.297
+      ],
+      "rotation_deg": null,
+      "before": {
+        "id": "A9",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          -2.19,
+          -0.821,
+          0.714
+        ],
+        "box": {
+          "center": [
+            -2.19,
+            -0.821,
+            0.714
+          ],
+          "size": [
+            0.304,
+            0.152,
+            0.077
+          ],
+          "yaw_deg": -85.1
+        },
+        "size_text": "30 x 15 x 8 cm",
+        "n_points": 225,
+        "seen_in_frames": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "after": {
+        "id": "B12",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          -1.469,
+          -1.4,
+          0.426
+        ],
+        "box": {
+          "center": [
+            -1.469,
+            -1.4,
+            0.426
+          ],
+          "size": [
+            0.454,
+            0.418,
+            0.094
+          ],
+          "yaw_deg": -82.0
+        },
+        "size_text": "45 x 42 x 9 cm",
+        "n_points": 848,
+        "seen_in_frames": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.83,
+        "point_verdicts": {
+          "kept": 34,
+          "changed": 166,
+          "ambiguous": 25,
+          "hidden": 0,
+          "unseen": 0
+        },
+        "confirming_views": [
+          24,
+          25,
+          26
+        ],
+        "views_that_looked": [
+          24,
+          25,
+          26
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.997,
+        "point_verdicts": {
+          "kept": 2,
+          "changed": 592,
+          "ambiguous": 33,
+          "hidden": 221,
+          "unseen": 0
+        },
+        "confirming_views": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "views_that_looked": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C1.jpg",
+      "extra": {
+        "match_cost": 0.424733812685177,
+        "shape_fit": 0.15765765765765766
+      }
+    },
+    {
+      "id": "C2",
+      "type": "moved",
+      "label": "bag",
+      "description": "The bag was moved 1.9 m: it was on the sofa and is now on the table. It is now 0.2 m higher. (6 views of the second recording see empty space at its old spot.)",
+      "confidence": 0.756,
+      "displacement_m": [
+        -1.911,
+        0.021,
+        0.217
+      ],
+      "rotation_deg": null,
+      "before": {
+        "id": "A0",
+        "label": "bag",
+        "source": "detected",
+        "center_m": [
+          0.39,
+          -0.896,
+          0.614
+        ],
+        "box": {
+          "center": [
+            0.39,
+            -0.896,
+            0.614
+          ],
+          "size": [
+            0.475,
+            0.441,
+            0.319
+          ],
+          "yaw_deg": -70.7
+        },
+        "size_text": "47 x 44 x 32 cm",
+        "n_points": 1764,
+        "seen_in_frames": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "after": {
+        "id": "B1",
+        "label": "bag",
+        "source": "detected",
+        "center_m": [
+          -1.284,
+          -0.807,
+          0.751
+        ],
+        "box": {
+          "center": [
+            -1.284,
+            -0.807,
+            0.751
+          ],
+          "size": [
+            0.366,
+            0.463,
+            0.158
+          ],
+          "yaw_deg": -66.5
+        },
+        "size_text": "46 x 37 x 16 cm",
+        "n_points": 858,
+        "seen_in_frames": [
+          24,
+          25,
+          27,
+          28
+        ]
+      },
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.93,
+        "point_verdicts": {
+          "kept": 115,
+          "changed": 1537,
+          "ambiguous": 99,
+          "hidden": 13,
+          "unseen": 0
+        },
+        "confirming_views": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "views_that_looked": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.51,
+        "point_verdicts": {
+          "kept": 309,
+          "changed": 321,
+          "ambiguous": 124,
+          "hidden": 104,
+          "unseen": 0
+        },
+        "confirming_views": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "views_that_looked": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C2.jpg",
+      "extra": {
+        "match_cost": 0.3533905061263547,
+        "shape_fit": 0.63,
+        "measured_by": "shape"
+      }
+    },
+    {
+      "id": "C3",
+      "type": "moved",
+      "label": "sofa",
+      "description": "The sofa was moved 0.4 m (0.4 m further away): it was 0.7 m right of the other sofa and is now 1.0 m right of the other sofa. It was also turned about 32\u00b0. (8 views of the second recording see empty space at its old spot.)",
+      "confidence": 0.728,
+      "displacement_m": [
+        0.127,
+        -0.376,
+        -0.0
+      ],
+      "rotation_deg": 32.4,
+      "before": {
+        "id": "A20",
+        "label": "sofa",
+        "source": "detected",
+        "center_m": [
+          0.238,
+          -1.06,
+          0.509
+        ],
+        "box": {
+          "center": [
+            0.238,
+            -1.06,
+            0.509
+          ],
+          "size": [
+            0.887,
+            1.598,
+            0.638
+          ],
+          "yaw_deg": -73.0
+        },
+        "size_text": "160 x 89 x 64 cm",
+        "n_points": 11684,
+        "seen_in_frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "after": {
+        "id": "B22",
+        "label": "sofa",
+        "source": "detected",
+        "center_m": [
+          0.347,
+          -1.467,
+          0.491
+        ],
+        "box": {
+          "center": [
+            0.347,
+            -1.467,
+            0.491
+          ],
+          "size": [
+            0.892,
+            1.605,
+            0.602
+          ],
+          "yaw_deg": -40.6
+        },
+        "size_text": "161 x 89 x 60 cm",
+        "n_points": 8679,
+        "seen_in_frames": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.533,
+        "point_verdicts": {
+          "kept": 3013,
+          "changed": 3434,
+          "ambiguous": 846,
+          "hidden": 4391,
+          "unseen": 0
+        },
+        "confirming_views": [
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "views_that_looked": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.517,
+        "point_verdicts": {
+          "kept": 1384,
+          "changed": 1484,
+          "ambiguous": 174,
+          "hidden": 5637,
+          "unseen": 0
+        },
+        "confirming_views": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "views_that_looked": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C3.jpg",
+      "extra": {
+        "match_cost": 0.048183012439185866,
+        "shape_fit": 0.56,
+        "measured_by": "shape"
+      }
+    },
+    {
+      "id": "C4",
+      "type": "moved",
+      "label": "chair",
+      "description": "The chair was turned about 69\u00b0 and shifted 0.3 m; it is still on the floor, at the sofa side of the table. (8 views of the first recording saw empty space at its new spot.)",
+      "confidence": 0.715,
+      "displacement_m": [
+        0.317,
+        0.048,
+        0.03
+      ],
+      "rotation_deg": -69.1,
+      "before": {
+        "id": "A8",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          -0.994,
+          -0.337,
+          0.292
+        ],
+        "box": {
+          "center": [
+            -0.994,
+            -0.337,
+            0.292
+          ],
+          "size": [
+            0.478,
+            0.116,
+            0.427
+          ],
+          "yaw_deg": -79.2
+        },
+        "size_text": "48 x 12 x 43 cm",
+        "n_points": 276,
+        "seen_in_frames": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "after": {
+        "id": "B10",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          -0.806,
+          -0.374,
+          0.425
+        ],
+        "box": {
+          "center": [
+            -0.806,
+            -0.374,
+            0.425
+          ],
+          "size": [
+            0.408,
+            0.543,
+            0.632
+          ],
+          "yaw_deg": -58.4
+        },
+        "size_text": "54 x 41 x 63 cm",
+        "n_points": 1203,
+        "seen_in_frames": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "evidence_before_object": {
+        "status": "present",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 59,
+          "changed": 0,
+          "ambiguous": 37,
+          "hidden": 180,
+          "unseen": 0
+        },
+        "confirming_views": [],
+        "views_that_looked": [
+          29
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.808,
+        "point_verdicts": {
+          "kept": 100,
+          "changed": 420,
+          "ambiguous": 128,
+          "hidden": 124,
+          "unseen": 431
+        },
+        "confirming_views": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "views_that_looked": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C4.jpg",
+      "extra": {
+        "in_place": true,
+        "shape_fit": 0.352,
+        "measured_by": "shape"
+      }
+    },
+    {
+      "id": "C5",
+      "type": "moved",
+      "label": "bottle",
+      "description": "The bottle was moved 3.5 m: it was on the desk and is now on the table. Depth sees straight through it, so the detector checked instead: the second video looked at the old spot from 4 viewpoints and never found it there, and the first video looked at the new spot from 6 viewpoints and never found it there either.",
+      "confidence": 0.564,
+      "displacement_m": [
+        -2.54,
+        2.35,
+        0.122
+      ],
+      "rotation_deg": null,
+      "before": {
+        "id": "A2",
+        "label": "bottle",
+        "source": "detected",
+        "center_m": [
+          1.112,
+          -2.959,
+          0.798
+        ],
+        "box": {
+          "center": [
+            1.112,
+            -2.959,
+            0.798
+          ],
+          "size": [
+            0.238,
+            0.13,
+            0.221
+          ],
+          "yaw_deg": -61.7
+        },
+        "size_text": "24 x 13 x 22 cm",
+        "n_points": 220,
+        "seen_in_frames": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "after": {
+        "id": "B5",
+        "label": "bottle",
+        "source": "detected",
+        "center_m": [
+          -1.427,
+          -0.609,
+          0.837
+        ],
+        "box": {
+          "center": [
+            -1.427,
+            -0.609,
+            0.837
+          ],
+          "size": [
+            0.035,
+            0.039,
+            0.055
+          ],
+          "yaw_deg": -0.6
+        },
+        "size_text": "4 x 3 x 5 cm",
+        "n_points": 17,
+        "seen_in_frames": [
+          24,
+          25,
+          26
+        ]
+      },
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.05,
+        "point_verdicts": {
+          "kept": 172,
+          "changed": 9,
+          "ambiguous": 2,
+          "hidden": 37,
+          "unseen": 0
+        },
+        "confirming_views": [
+          35,
+          36,
+          37,
+          38
+        ],
+        "views_that_looked": [
+          35,
+          36,
+          37,
+          38
+        ],
+        "reason": "not_redetected"
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 17,
+          "unseen": 0
+        },
+        "confirming_views": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "views_that_looked": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "reason": "not_redetected"
+      },
+      "evidence_image": "figures/evidence_C5.jpg",
+      "extra": {
+        "match_cost": 0.06388676166534424
+      }
+    }
+  ],
+  "cant_tell": [
+    {
+      "label": "TV",
+      "description": "Can't tell: the TV 0.9 m in front of the sofa (seen in the second recording) is not reported as changed, because it was never in view during the first recording.",
+      "object": {
+        "id": "B0",
+        "label": "TV",
+        "source": "detected",
+        "center_m": [
+          -0.255,
+          0.524,
+          0.59
+        ],
+        "box": {
+          "center": [
+            -0.255,
+            0.524,
+            0.59
+          ],
+          "size": [
+            0.099,
+            0.808,
+            0.443
+          ],
+          "yaw_deg": -80.0
+        },
+        "size_text": "81 x 10 x 44 cm",
+        "n_points": 660,
+        "seen_in_frames": [
+          25,
+          26,
+          30,
+          31
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 0,
+          "unseen": 660
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "outside_view"
+      }
+    },
+    {
+      "label": "chair",
+      "description": "Can't tell: the object that looks like a chair next to the table (seen in the second recording) is not reported as changed, because other things blocked the view of it in every frame of the first recording.",
+      "object": {
+        "id": "B14",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          -2.147,
+          -0.278,
+          0.433
+        ],
+        "box": {
+          "center": [
+            -2.147,
+            -0.278,
+            0.433
+          ],
+          "size": [
+            0.409,
+            0.063,
+            0.075
+          ],
+          "yaw_deg": -79.3
+        },
+        "size_text": "41 x 6 x 8 cm",
+        "n_points": 106,
+        "seen_in_frames": [
+          25,
+          26
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 106,
+          "unseen": 0
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "occluded"
+      }
+    },
+    {
+      "label": "speaker",
+      "description": "Can't tell: the speaker next to the sofa (seen in the second recording) is not reported as changed, because it was never in view during the first recording.",
+      "object": {
+        "id": "B24",
+        "label": "speaker",
+        "source": "detected",
+        "center_m": [
+          0.349,
+          0.786,
+          0.66
+        ],
+        "box": {
+          "center": [
+            0.349,
+            0.786,
+            0.66
+          ],
+          "size": [
+            0.124,
+            0.231,
+            0.256
+          ],
+          "yaw_deg": -76.3
+        },
+        "size_text": "23 x 12 x 26 cm",
+        "n_points": 394,
+        "seen_in_frames": [
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 0,
+          "unseen": 394
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "outside_view"
+      }
+    },
+    {
+      "label": "tv stand",
+      "description": "Can't tell: the object that looks like a tv stand on the floor, 0.8 m in front of the sofa (seen in the second recording) is not reported as changed, because it was never in view during the first recording.",
+      "object": {
+        "id": "B26",
+        "label": "tv stand",
+        "source": "detected",
+        "center_m": [
+          -0.084,
+          0.56,
+          0.429
+        ],
+        "box": {
+          "center": [
+            -0.084,
+            0.56,
+            0.429
+          ],
+          "size": [
+            0.216,
+            1.215,
+            0.6
+          ],
+          "yaw_deg": -70.2
+        },
+        "size_text": "122 x 22 x 60 cm",
+        "n_points": 1222,
+        "seen_in_frames": [
+          30,
+          31
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 0,
+          "unseen": 1222
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "outside_view"
+      }
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "A1",
+      "label": "bin",
+      "source": "detected",
+      "center_m": [
+        -1.696,
+        -2.658,
+        0.1
+      ],
+      "box": {
+        "center": [
+          -1.696,
+          -2.658,
+          0.1
+        ],
+        "size": [
+          0.196,
+          0.287,
+          0.178
+        ],
+        "yaw_deg": -89.1
+      },
+      "size_text": "29 x 20 x 18 cm",
+      "n_points": 252,
+      "seen_in_frames": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "A3",
+      "label": "bottle",
+      "source": "detected",
+      "center_m": [
+        -0.323,
+        -3.534,
+        0.962
+      ],
+      "box": {
+        "center": [
+          -0.323,
+          -3.534,
+          0.962
+        ],
+        "size": [
+          0.05,
+          0.227,
+          0.244
+        ],
+        "yaw_deg": -9.3
+      },
+      "size_text": "23 x 5 x 24 cm",
+      "n_points": 116,
+      "seen_in_frames": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "A4",
+      "label": "bottle",
+      "source": "detected",
+      "center_m": [
+        -1.593,
+        -3.737,
+        0.856
+      ],
+      "box": {
+        "center": [
+          -1.593,
+          -3.737,
+          0.856
+        ],
+        "size": [
+          0.065,
+          0.126,
+          0.218
+        ],
+        "yaw_deg": -26.2
+      },
+      "size_text": "13 x 6 x 22 cm",
+      "n_points": 101,
+      "seen_in_frames": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "A5",
+      "label": "box",
+      "source": "detected",
+      "center_m": [
+        -1.665,
+        -2.429,
+        0.05
+      ],
+      "box": {
+        "center": [
+          -1.665,
+          -2.429,
+          0.05
+        ],
+        "size": [
+          0.649,
+          0.377,
+          0.182
+        ],
+        "yaw_deg": -74.9
+      },
+      "size_text": "65 x 38 x 18 cm",
+      "n_points": 1136,
+      "seen_in_frames": [
+        13,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "A7",
+      "label": "chair",
+      "source": "detected",
+      "center_m": [
+        1.217,
+        -2.428,
+        0.62
+      ],
+      "box": {
+        "center": [
+          1.217,
+          -2.428,
+          0.62
+        ],
+        "size": [
+          0.181,
+          0.383,
+          0.337
+        ],
+        "yaw_deg": -63.0
+      },
+      "size_text": "38 x 18 x 34 cm",
+      "n_points": 533,
+      "seen_in_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "A10",
+      "label": "chair",
+      "source": "detected",
+      "center_m": [
+        0.791,
+        -2.788,
+        0.412
+      ],
+      "box": {
+        "center": [
+          0.791,
+          -2.788,
+          0.412
+        ],
+        "size": [
+          0.252,
+          0.118,
+          0.152
+        ],
+        "yaw_deg": -3.1
+      },
+      "size_text": "25 x 12 x 15 cm",
+      "n_points": 209,
+      "seen_in_frames": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "A11",
+      "label": "desk",
+      "source": "detected",
+      "center_m": [
+        1.715,
+        -2.618,
+        0.684
+      ],
+      "box": {
+        "center": [
+          1.715,
+          -2.618,
+          0.684
+        ],
+        "size": [
+          0.572,
+          0.305,
+          0.062
+        ],
+        "yaw_deg": -49.9
+      },
+      "size_text": "57 x 31 x 6 cm",
+      "n_points": 282,
+      "seen_in_frames": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "A12",
+      "label": "keyboard",
+      "source": "detected",
+      "center_m": [
+        1.587,
+        -2.768,
+        0.733
+      ],
+      "box": {
+        "center": [
+          1.587,
+          -2.768,
+          0.733
+        ],
+        "size": [
+          0.278,
+          0.318,
+          0.04
+        ],
+        "yaw_deg": -74.2
+      },
+      "size_text": "32 x 28 x 4 cm",
+      "n_points": 295,
+      "seen_in_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "A15",
+      "label": "monitor",
+      "source": "detected",
+      "center_m": [
+        1.726,
+        -2.835,
+        0.948
+      ],
+      "box": {
+        "center": [
+          1.726,
+          -2.835,
+          0.948
+        ],
+        "size": [
+          0.093,
+          0.548,
+          0.272
+        ],
+        "yaw_deg": -38.4
+      },
+      "size_text": "55 x 9 x 27 cm",
+      "n_points": 1312,
+      "seen_in_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "A16",
+      "label": "oven",
+      "source": "detected",
+      "center_m": [
+        -0.923,
+        -3.175,
+        0.497
+      ],
+      "box": {
+        "center": [
+          -0.923,
+          -3.175,
+          0.497
+        ],
+        "size": [
+          0.102,
+          0.638,
+          0.496
+        ],
+        "yaw_deg": -76.8
+      },
+      "size_text": "64 x 10 x 50 cm",
+      "n_points": 2709,
+      "seen_in_frames": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "A17",
+      "label": "pillow",
+      "source": "detected",
+      "center_m": [
+        1.136,
+        -0.112,
+        0.656
+      ],
+      "box": {
+        "center": [
+          1.136,
+          -0.112,
+          0.656
+        ],
+        "size": [
+          0.631,
+          0.359,
+          0.284
+        ],
+        "yaw_deg": -62.1
+      },
+      "size_text": "63 x 36 x 28 cm",
+      "n_points": 1463,
+      "seen_in_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "A19",
+      "label": "printer",
+      "source": "detected",
+      "center_m": [
+        1.38,
+        -0.721,
+        0.485
+      ],
+      "box": {
+        "center": [
+          1.38,
+          -0.721,
+          0.485
+        ],
+        "size": [
+          0.294,
+          0.396,
+          0.215
+        ],
+        "yaw_deg": -39.6
+      },
+      "size_text": "40 x 29 x 21 cm",
+      "n_points": 427,
+      "seen_in_frames": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "A21",
+      "label": "sofa",
+      "source": "detected",
+      "center_m": [
+        0.888,
+        -0.221,
+        0.406
+      ],
+      "box": {
+        "center": [
+          0.888,
+          -0.221,
+          0.406
+        ],
+        "size": [
+          1.282,
+          0.579,
+          0.421
+        ],
+        "yaw_deg": -39.8
+      },
+      "size_text": "128 x 58 x 42 cm",
+      "n_points": 3531,
+      "seen_in_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "A22",
+      "label": "table",
+      "source": "detected",
+      "center_m": [
+        -1.457,
+        -0.544,
+        0.472
+      ],
+      "box": {
+        "center": [
+          -1.457,
+          -0.544,
+          0.472
+        ],
+        "size": [
+          1.175,
+          0.828,
+          0.515
+        ],
+        "yaw_deg": -75.3
+      },
+      "size_text": "118 x 83 x 52 cm",
+      "n_points": 3707,
+      "seen_in_frames": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "id": "A24",
+      "label": "washing machine",
+      "source": "detected",
+      "center_m": [
+        0.28,
+        -2.9,
+        0.538
+      ],
+      "box": {
+        "center": [
+          0.28,
+          -2.9,
+          0.538
+        ],
+        "size": [
+          0.338,
+          0.549,
+          0.497
+        ],
+        "yaw_deg": -76.0
+      },
+      "size_text": "55 x 34 x 50 cm",
+      "n_points": 2557,
+      "seen_in_frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "B7",
+      "label": "box",
+      "source": "detected",
+      "center_m": [
+        -1.467,
+        -2.651,
+        0.105
+      ],
+      "box": {
+        "center": [
+          -1.467,
+          -2.651,
+          0.105
+        ],
+        "size": [
+          0.217,
+          0.137,
+          0.18
+        ],
+        "yaw_deg": -82.9
+      },
+      "size_text": "22 x 14 x 18 cm",
+      "n_points": 278,
+      "seen_in_frames": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "B8",
+      "label": "cabinet",
+      "source": "detected",
+      "center_m": [
+        -0.34,
+        -2.972,
+        0.476
+      ],
+      "box": {
+        "center": [
+          -0.34,
+          -2.972,
+          0.476
+        ],
+        "size": [
+          0.05,
+          0.585,
+          0.612
+        ],
+        "yaw_deg": -74.7
+      },
+      "size_text": "58 x 5 x 61 cm",
+      "n_points": 2179,
+      "seen_in_frames": [
+        40,
+        41
+      ]
+    },
+    {
+      "id": "B9",
+      "label": "cabinet",
+      "source": "detected",
+      "center_m": [
+        0.192,
+        -2.801,
+        0.907
+      ],
+      "box": {
+        "center": [
+          0.192,
+          -2.801,
+          0.907
+        ],
+        "size": [
+          0.042,
+          0.559,
+          0.155
+        ],
+        "yaw_deg": -77.6
+      },
+      "size_text": "56 x 4 x 16 cm",
+      "n_points": 380,
+      "seen_in_frames": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "B15",
+      "label": "cup",
+      "source": "detected",
+      "center_m": [
+        -1.798,
+        -2.968,
+        0.807
+      ],
+      "box": {
+        "center": [
+          -1.798,
+          -2.968,
+          0.807
+        ],
+        "size": [
+          0.102,
+          0.123,
+          0.07
+        ],
+        "yaw_deg": -62.2
+      },
+      "size_text": "12 x 10 x 7 cm",
+      "n_points": 59,
+      "seen_in_frames": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "B18",
+      "label": "laptop",
+      "source": "detected",
+      "center_m": [
+        -1.635,
+        -0.606,
+        0.706
+      ],
+      "box": {
+        "center": [
+          -1.635,
+          -0.606,
+          0.706
+        ],
+        "size": [
+          0.353,
+          0.249,
+          0.055
+        ],
+        "yaw_deg": -76.5
+      },
+      "size_text": "35 x 25 x 5 cm",
+      "n_points": 291,
+      "seen_in_frames": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "diagnostics": {
+    "gravity": {
+      "floor_found": true,
+      "scale": 2.557197930648071,
+      "camera_height_raw": 0.5474742424983887,
+      "up_prior_vs_floor_deg": 7.784237064721727,
+      "manhattan_support": 0.45500717017208414,
+      "floor_inliers": 2627,
+      "camera_height_assumed": 1.4
+    },
+    "refine": {
+      "applied": true,
+      "inliers_5cm_before": 0.20481424794768333,
+      "inliers_5cm_after": 0.2851378480987497,
+      "rot_deg": 1.240797964611774,
+      "trans": 0.07414611640236422,
+      "scale": 0.987861481644904
+    },
+    "overlap": 0.5414101228252975,
+    "calibration": {
+      "depth_noise_rel": 0.015530433727077736,
+      "residuals_used": 195453,
+      "tau_rel_default": 0.04,
+      "tau_rel": 0.054356518044772074
+    },
+    "self_test": {
+      "false_alarm_rate": 0.002367824876490979,
+      "points_tested": 146548
+    },
+    "appearance": {
+      "pairs": 10678,
+      "flagged": 0
+    }
+  }
+}

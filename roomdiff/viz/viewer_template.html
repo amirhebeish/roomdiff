@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  :root {
+    --bg: #0e1014; --panel: #15181e; --panel-2: #1b1f27; --line: #2a2f39;
+    --text: #e8eaee; --muted: #9aa3b2; --accent: #3E63DD;
+    --moved: #3E63DD; --added: #30A46C; --removed: #E5484D; --unv: #F5A524;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .app { display: grid; grid-template-columns: 1fr 400px; height: 100vh; }
+  #view { position: relative; overflow: hidden; min-height: 300px; }
+  #view canvas { display: block; }
+  #labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .lbl { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 12px; font-weight: 600;
+    padding: 2px 7px; border-radius: 6px; border: 1px solid; background: rgba(14,16,20,.82); }
+  .lbl.stat { font-weight: 500; font-size: 11px; opacity: .85; }
+  aside { background: var(--panel); border-left: 1px solid var(--line); overflow-y: auto; padding: 18px 18px 40px; }
+  h1 { font-size: 17px; margin: 0 0 4px; letter-spacing: .2px; }
+  .headline { color: var(--muted); margin: 0 0 14px; }
+  .controls { display: grid; gap: 10px; margin-bottom: 16px; }
+  .seg { display: inline-flex; background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; padding: 3px; }
+  .seg button { background: none; border: 0; color: var(--muted); padding: 6px 11px; border-radius: 6px; cursor: pointer; font: inherit; font-size: 13px; }
+  .seg button.on { background: #2b3140; color: var(--text); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; color: var(--muted); font-size: 13px; }
+  .row label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .btn { background: var(--panel-2); border: 1px solid var(--line); color: var(--text); border-radius: 8px; padding: 6px 10px; cursor: pointer; font: inherit; font-size: 13px; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 20px 0 8px; }
+  .card { background: var(--panel-2); border: 1px solid var(--line); border-left: 4px solid var(--c);
+    border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; cursor: pointer; transition: border-color .15s, background .15s; }
+  .card:hover, .card.active { background: #20252f; border-color: var(--c); }
+  .card-head { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+  .badge { background: var(--c); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 5px; text-transform: uppercase; letter-spacing: .04em; }
+  .cid { color: var(--muted); font-size: 12px; }
+  .clabel { font-weight: 650; }
+  .conf { margin-left: auto; color: var(--muted); font-size: 12px; }
+  .card p { margin: 4px 0 8px; color: #d3d7de; }
+  .card img { width: 100%; border-radius: 6px; display: block; border: 1px solid var(--line); }
+  .empty { color: var(--muted); }
+  .legend { position: absolute; left: 12px; bottom: 12px; background: rgba(21,24,30,.88); border: 1px solid var(--line);
+    border-radius: 9px; padding: 8px 10px; font-size: 12px; color: var(--muted); display: grid; gap: 3px; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .hint { position: absolute; right: 12px; bottom: 12px; font-size: 12px; color: #6d7584; }
+  ul.diag { padding-left: 18px; color: var(--muted); font-size: 12.5px; margin: 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+  #lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: grid; place-items: center; z-index: 10; cursor: zoom-out; padding: 16px; }
+  #lightbox[hidden] { display: none; }
+  #lightbox img { max-width: 100%; max-height: calc(100vh - 90px); border-radius: 8px; display: block; margin: 0 auto; }
+  .lb-inner { max-width: 100%; }
+  #gallery-bar { display: flex; gap: 10px; align-items: center; justify-content: center; margin-top: 10px; color: var(--text); flex-wrap: wrap; cursor: default; }
+  #gallery-bar[hidden] { display: none; }
+  .replay span { font-size: 12px; }
+  @media (max-width: 820px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: 58vh auto; height: auto; }
+    aside { border-left: 0; border-top: 1px solid var(--line); padding: 16px; }
+    .hint { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <main id="view">
+    <div id="labels"></div>
+    <div class="legend">
+      <div><i style="background:var(--moved)"></i>moved (dashed box = old place)</div>
+      <div><i style="background:var(--added)"></i>added</div>
+      <div><i style="background:var(--removed)"></i>removed</div>
+      <div><i style="background:#8E4EC6"></i>looks different (flat / colour)</div>
+      <div><i style="background:var(--unv)"></i>can't tell (not seen in both)</div>
+      <div id="legend-evidence" hidden>
+        <div style="margin-top:6px;color:#c9ced8">Evidence colours (per point)</div>
+        <div><i style="background:#8c9199"></i>still there (confirmed by other video)</div>
+        <div><i style="background:#e5484d"></i>seen through in 'after' (gone)</div>
+        <div><i style="background:#30a46c"></i>seen through in 'before' (new)</div>
+        <div><i style="background:#6b551f"></i>hidden behind something</div>
+        <div><i style="background:#4d4533"></i>never in view of the other video</div>
+      </div>
+    </div>
+    <div class="hint">drag to orbit · right-drag to pan · scroll to zoom</div>
+  </main>
+  <aside>
+    <h1 id="title"></h1>
+    <p class="headline" id="headline"></p>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Recording">
+        <button data-show="before">Before</button><button data-show="after">After</button><button data-show="both">Both</button>
+      </div>
+      <div class="seg" role="group" aria-label="Colouring">
+        <button data-colour="photo">Photo colours</button><button data-colour="evidence">Evidence</button><button data-colour="dim">Dim</button>
+      </div>
+      <div class="row">
+        <label><input type="checkbox" data-toggle="changes">changes</label>
+        <label><input type="checkbox" data-toggle="unverified">can't tell</label>
+        <label><input type="checkbox" data-toggle="unchanged">unchanged</label>
+        <label><input type="checkbox" data-toggle="cameras">cameras</label>
+      </div>
+      <div class="row replay">
+        <button class="btn" id="play" title="animate the changes">▶ Replay</button>
+        <span>before</span><input id="time" type="range" min="0" max="1" step="0.01" value="1" style="flex:1;min-width:110px"><span id="time-lbl">after</span>
+      </div>
+      <div class="row">
+        <label style="flex:1">cut above <input id="cut" type="range" min="0.3" step="0.05" style="flex:1;min-width:120px"></label>
+        <span id="cut-val"></span>
+      </div>
+      <div class="row">
+        <button class="btn" id="reset">Reset view</button>
+        <button class="btn" id="expected">Expected vs actual</button>
+        <button class="btn" data-image="overview">Floor plan</button>
+        <button class="btn" data-image="occupancy">Occupancy maps</button>
+      </div>
+    </div>
+    <h2>Changes</h2>
+    <div id="changes"></div>
+    <section id="unverified-section">
+      <h2>Can't tell</h2>
+      <p class="muted">Seen in only one recording, so not reported as moved or removed.</p>
+      <div id="unverified"></div>
+    </section>
+    <h2>Unchanged</h2>
+    <p class="muted" id="unchanged-list"></p>
+    <h2>Diagnostics</h2>
+    <ul class="diag" id="diag"></ul>
+  </aside>
+</div>
+<div id="lightbox" hidden>
+  <div class="lb-inner">
+    <img alt="">
+    <div id="gallery-bar" hidden>
+      <button class="btn" id="g-prev">‹</button>
+      <span id="g-idx"></span>
+      <button class="btn" id="g-next">›</button>
+      <span class="muted">What the first video predicts each camera of the second video should see, vs what it saw.</span>
+    </div>
+  </div>
+</div>
+<script>window.ROOMDIFF = __DATA__;</script>
+<script>__BUNDLE__</script>
+</body>
+</html>

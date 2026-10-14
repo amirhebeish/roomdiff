@@ -1,0 +1,23 @@
+[project]
+name = "roomdiff"
+version = "0.1.0"
+description = "What changed in the room? Visibility-aware 3D change detection from two phone videos."
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "opencv-python-headless", "pillow", "matplotlib"]
+
+[project.optional-dependencies]
+models = ["torch", "torchvision", "transformers>=4.40", "huggingface_hub", "einops", "safetensors"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["roomdiff*"]
+
+[tool.setuptools.package-data]
+roomdiff = ["viz/viewer_bundle.js", "viz/viewer_template.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

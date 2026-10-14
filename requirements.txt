@@ -1,0 +1,13 @@
+# core (CPU: reasoning, synthetic benchmark, outputs)
+numpy
+scipy
+opencv-python-headless
+pillow
+matplotlib
+# models (GPU run on real videos); VGGT itself is cloned into third_party/vggt
+torch
+torchvision
+transformers>=4.40
+huggingface_hub
+einops
+safetensors

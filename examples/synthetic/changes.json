@@ -1,0 +1,877 @@
+{
+  "headline": "5 changes found: 1 moved, 2 added, 1 removed, 1 flat / colour-only. 4 objects unchanged, 2 could not be checked (not visible in both recordings).",
+  "units": "m",
+  "frame": "z up, floor at z=0; x points along the first 'before' camera's view, y to its left",
+  "changes": [
+    {
+      "id": "C1",
+      "type": "moved",
+      "label": "chair",
+      "description": "The chair was moved 1.6 m: it was on the floor, 0.7 m right of the table and is now on the floor, 0.6 m left of the cabinet. It was also turned about 60\u00b0. (10 views of the second recording see empty space at its old spot.)",
+      "confidence": 0.949,
+      "displacement_m": [
+        -1.594,
+        -0.322,
+        -0.002
+      ],
+      "rotation_deg": 60.2,
+      "before": {
+        "id": "A2",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          3.142,
+          0.779,
+          0.47
+        ],
+        "box": {
+          "center": [
+            3.142,
+            0.779,
+            0.47
+          ],
+          "size": [
+            0.502,
+            0.676,
+            0.837
+          ],
+          "yaw_deg": -68.1
+        },
+        "size_text": "68 x 50 x 84 cm",
+        "n_points": 8899,
+        "seen_in_frames": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "after": {
+        "id": "B2",
+        "label": "chair",
+        "source": "detected",
+        "center_m": [
+          1.541,
+          0.468,
+          0.467
+        ],
+        "box": {
+          "center": [
+            1.541,
+            0.468,
+            0.467
+          ],
+          "size": [
+            0.544,
+            0.649,
+            0.836
+          ],
+          "yaw_deg": -7.8
+        },
+        "size_text": "65 x 54 x 84 cm",
+        "n_points": 10199,
+        "seen_in_frames": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.943,
+        "point_verdicts": {
+          "kept": 408,
+          "changed": 6737,
+          "ambiguous": 74,
+          "hidden": 0,
+          "unseen": 1680
+        },
+        "confirming_views": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "views_that_looked": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.976,
+        "point_verdicts": {
+          "kept": 212,
+          "changed": 8546,
+          "ambiguous": 315,
+          "hidden": 0,
+          "unseen": 1126
+        },
+        "confirming_views": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "views_that_looked": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C1.jpg",
+      "extra": {
+        "match_cost": 0.09871282125423457,
+        "shape_fit": 0.95,
+        "measured_by": "shape"
+      }
+    },
+    {
+      "id": "C2",
+      "type": "added",
+      "label": "backpack",
+      "description": "New: a backpack (about 44 x 31 x 44 cm) appeared on the floor, next to the table. The first recording saw empty space there from 10 viewpoints.",
+      "confidence": 0.87,
+      "displacement_m": null,
+      "rotation_deg": null,
+      "before": null,
+      "after": {
+        "id": "B0",
+        "label": "backpack",
+        "source": "detected",
+        "center_m": [
+          2.259,
+          0.962,
+          0.244
+        ],
+        "box": {
+          "center": [
+            2.259,
+            0.962,
+            0.244
+          ],
+          "size": [
+            0.307,
+            0.445,
+            0.436
+          ],
+          "yaw_deg": -64.1
+        },
+        "size_text": "44 x 31 x 44 cm",
+        "n_points": 3012,
+        "seen_in_frames": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "evidence_before_object": null,
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.763,
+        "point_verdicts": {
+          "kept": 683,
+          "changed": 2199,
+          "ambiguous": 130,
+          "hidden": 0,
+          "unseen": 0
+        },
+        "confirming_views": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "views_that_looked": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C2.jpg"
+    },
+    {
+      "id": "C3",
+      "type": "added",
+      "label": "unidentified object",
+      "description": "New: an unidentified object (about 42 x 31 x 12 cm) appeared on the floor, 1.0 m right of the table. The first recording saw empty space there from 8 viewpoints.",
+      "confidence": 0.795,
+      "displacement_m": null,
+      "rotation_deg": null,
+      "before": null,
+      "after": {
+        "id": "rB0",
+        "label": "unidentified object",
+        "source": "region",
+        "center_m": [
+          2.8,
+          0.382,
+          0.205
+        ],
+        "box": {
+          "center": [
+            2.8,
+            0.382,
+            0.205
+          ],
+          "size": [
+            0.312,
+            0.416,
+            0.116
+          ],
+          "yaw_deg": -53.0
+        },
+        "size_text": "42 x 31 x 12 cm",
+        "n_points": 884,
+        "seen_in_frames": []
+      },
+      "evidence_before_object": null,
+      "evidence_after_object": {
+        "status": "new",
+        "fraction_seen_through": 0.989,
+        "point_verdicts": {
+          "kept": 9,
+          "changed": 833,
+          "ambiguous": 42,
+          "hidden": 0,
+          "unseen": 0
+        },
+        "confirming_views": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "views_that_looked": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reason": ""
+      },
+      "evidence_image": "figures/evidence_C3.jpg"
+    },
+    {
+      "id": "C4",
+      "type": "removed",
+      "label": "plant",
+      "description": "The plant (about 26 x 20 x 40 cm) that was on the table has been removed. The second recording looked at that spot from 12 viewpoints and saw straight through to the surface behind.",
+      "confidence": 0.916,
+      "displacement_m": null,
+      "rotation_deg": null,
+      "before": {
+        "id": "A4",
+        "label": "plant",
+        "source": "detected",
+        "center_m": [
+          2.373,
+          1.959,
+          0.937
+        ],
+        "box": {
+          "center": [
+            2.373,
+            1.959,
+            0.937
+          ],
+          "size": [
+            0.26,
+            0.205,
+            0.397
+          ],
+          "yaw_deg": -84.4
+        },
+        "size_text": "26 x 20 x 40 cm",
+        "n_points": 1298,
+        "seen_in_frames": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          12,
+          13
+        ]
+      },
+      "after": null,
+      "evidence_before_object": {
+        "status": "gone",
+        "fraction_seen_through": 0.848,
+        "point_verdicts": {
+          "kept": 193,
+          "changed": 1075,
+          "ambiguous": 30,
+          "hidden": 0,
+          "unseen": 0
+        },
+        "confirming_views": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "views_that_looked": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "reason": ""
+      },
+      "evidence_after_object": null,
+      "evidence_image": "figures/evidence_C4.jpg"
+    },
+    {
+      "id": "C5",
+      "type": "appearance",
+      "label": "flat item",
+      "description": "Something flat (a rug, mat, papers...) was removed from the floor, next to the sofa (about 74 x 55 cm). The 3D shape there is unchanged, so only the colour gives it away: the second video now sees the same colour as the surroundings.",
+      "confidence": 0.85,
+      "displacement_m": null,
+      "rotation_deg": null,
+      "before": {
+        "id": "",
+        "label": "flat item",
+        "source": "appearance",
+        "center_m": [
+          1.974,
+          2.898,
+          0.001
+        ],
+        "box": {
+          "center": [
+            1.974,
+            2.898,
+            0.001
+          ],
+          "size": [
+            0.547,
+            0.745,
+            0.049
+          ],
+          "yaw_deg": -78.2
+        },
+        "size_text": "74 x 55 x 5 cm",
+        "n_points": 1405,
+        "seen_in_frames": []
+      },
+      "after": {
+        "id": "",
+        "label": "flat item",
+        "source": "appearance",
+        "center_m": [
+          1.976,
+          2.89,
+          -0.004
+        ],
+        "box": {
+          "center": [
+            1.976,
+            2.89,
+            -0.004
+          ],
+          "size": [
+            0.509,
+            0.798,
+            0.041
+          ],
+          "yaw_deg": -83.6
+        },
+        "size_text": "80 x 51 x 4 cm",
+        "n_points": 1090,
+        "seen_in_frames": []
+      },
+      "evidence_before_object": null,
+      "evidence_after_object": null,
+      "evidence_image": "figures/evidence_C5.jpg",
+      "extra": {
+        "direction": "removed",
+        "colour_difference": 57.54562410820549,
+        "area_m2": 0.41500000000000004
+      }
+    }
+  ],
+  "cant_tell": [
+    {
+      "label": "bin",
+      "description": "Can't tell: the bin on the floor, next to the shelf (seen in the first recording) is not reported as changed, because other things blocked the view of it in every frame of the second recording.",
+      "object": {
+        "id": "A0",
+        "label": "bin",
+        "source": "detected",
+        "center_m": [
+          2.84,
+          2.8,
+          0.215
+        ],
+        "box": {
+          "center": [
+            2.84,
+            2.8,
+            0.215
+          ],
+          "size": [
+            0.326,
+            0.286,
+            0.373
+          ],
+          "yaw_deg": -9.6
+        },
+        "size_text": "33 x 29 x 37 cm",
+        "n_points": 1550,
+        "seen_in_frames": [
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 1143,
+          "unseen": 407
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "occluded"
+      }
+    },
+    {
+      "label": "lamp",
+      "description": "Can't tell: the lamp 1.4 m beyond the shelf (seen in the first recording) is not reported as changed, because it was never in view during the second recording.",
+      "object": {
+        "id": "A3",
+        "label": "lamp",
+        "source": "detected",
+        "center_m": [
+          4.396,
+          4.249,
+          1.05
+        ],
+        "box": {
+          "center": [
+            4.396,
+            4.249,
+            1.05
+          ],
+          "size": [
+            0.27,
+            0.218,
+            0.955
+          ],
+          "yaw_deg": -75.4
+        },
+        "size_text": "27 x 22 x 95 cm",
+        "n_points": 2574,
+        "seen_in_frames": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "evidence": {
+        "status": "unverified",
+        "fraction_seen_through": 0.0,
+        "point_verdicts": {
+          "kept": 0,
+          "changed": 0,
+          "ambiguous": 0,
+          "hidden": 0,
+          "unseen": 2574
+        },
+        "confirming_views": [],
+        "views_that_looked": [],
+        "reason": "outside_view"
+      }
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "A1",
+      "label": "cabinet",
+      "source": "detected",
+      "center_m": [
+        1.283,
+        -0.429,
+        0.669
+      ],
+      "box": {
+        "center": [
+          1.283,
+          -0.429,
+          0.669
+        ],
+        "size": [
+          0.435,
+          0.908,
+          0.631
+        ],
+        "yaw_deg": -83.7
+      },
+      "size_text": "91 x 44 x 63 cm",
+      "n_points": 2990,
+      "seen_in_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "A5",
+      "label": "shelf",
+      "source": "detected",
+      "center_m": [
+        3.149,
+        2.838,
+        0.85
+      ],
+      "box": {
+        "center": [
+          3.149,
+          2.838,
+          0.85
+        ],
+        "size": [
+          1.391,
+          0.381,
+          1.523
+        ],
+        "yaw_deg": -79.2
+      },
+      "size_text": "139 x 38 x 152 cm",
+      "n_points": 29110,
+      "seen_in_frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "A6",
+      "label": "sofa",
+      "source": "detected",
+      "center_m": [
+        1.898,
+        3.805,
+        0.431
+      ],
+      "box": {
+        "center": [
+          1.898,
+          3.805,
+          0.431
+        ],
+        "size": [
+          0.802,
+          1.968,
+          0.707
+        ],
+        "yaw_deg": -84.2
+      },
+      "size_text": "197 x 80 x 71 cm",
+      "n_points": 14024,
+      "seen_in_frames": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "A7",
+      "label": "table",
+      "source": "detected",
+      "center_m": [
+        2.135,
+        1.827,
+        0.399
+      ],
+      "box": {
+        "center": [
+          2.135,
+          1.827,
+          0.399
+        ],
+        "size": [
+          0.772,
+          1.214,
+          0.66
+        ],
+        "yaw_deg": -82.8
+      },
+      "size_text": "121 x 77 x 66 cm",
+      "n_points": 11321,
+      "seen_in_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        15
+      ]
+    }
+  ],
+  "diagnostics": {
+    "gravity": {
+      "floor_found": true,
+      "scale": 2.6496473427147618,
+      "camera_height_raw": 0.5283722016249888,
+      "up_prior_vs_floor_deg": 1.3181023290236438,
+      "manhattan_support": 0.6161864850707176,
+      "floor_inliers": 7727,
+      "camera_height_assumed": 1.4
+    },
+    "refine": {
+      "applied": true,
+      "inliers_5cm_before": 0.0974019933142726,
+      "inliers_5cm_after": 0.11764523471368589,
+      "rot_deg": 0.49707160124004657,
+      "trans": 0.021843540925786012,
+      "scale": 1.0017399479860405
+    },
+    "overlap": 0.14587079238971357,
+    "calibration": {
+      "depth_noise_rel": 0.013837030632991888,
+      "residuals_used": 339950,
+      "tau_rel_default": 0.04,
+      "tau_rel": 0.04842960721547161
+    },
+    "self_test": {
+      "false_alarm_rate": 0.0,
+      "points_tested": 110126
+    },
+    "appearance": {
+      "pairs": 4519,
+      "flagged": 166,
+      "colour_map": [
+        [
+          0.9361780414471286,
+          -0.009980760065577295,
+          -0.04795208142218147
+        ],
+        [
+          -0.2697894474064257,
+          0.9444002574870481,
+          -0.030746973285196932
+        ],
+        [
+          0.02193201960836404,
+          -0.05527212536784746,
+          1.0422124235129067
+        ],
+        [
+          30.719720467990193,
+          15.499039395394323,
+          -1.2386754844521777
+        ]
+      ]
+    },
+    "evaluation": {
+      "rows": [
+        {
+          "expected": "moved",
+          "label": "chair",
+          "ok": true,
+          "id": "C1",
+          "note": "displacement error 15 cm of 1.77 m, rotation 60 deg (true 60)"
+        },
+        {
+          "expected": "removed",
+          "label": "plant",
+          "ok": true,
+          "id": "C4",
+          "note": ""
+        },
+        {
+          "expected": "added",
+          "label": "backpack",
+          "ok": true,
+          "id": "C2",
+          "note": ""
+        },
+        {
+          "expected": "added",
+          "label": "unidentified object",
+          "ok": true,
+          "id": "C3",
+          "note": ""
+        },
+        {
+          "expected": "can't tell",
+          "label": "lamp",
+          "ok": true,
+          "id": "A3",
+          "note": "outside_view"
+        },
+        {
+          "expected": "can't tell",
+          "label": "bin",
+          "ok": true,
+          "id": "A0",
+          "note": "occluded"
+        },
+        {
+          "expected": "looks diff.",
+          "label": "rug",
+          "ok": true,
+          "id": "C5",
+          "note": "direction: removed (true removed)"
+        },
+        {
+          "expected": "unchanged",
+          "label": "sofa",
+          "ok": true,
+          "id": "-",
+          "note": ""
+        },
+        {
+          "expected": "unchanged",
+          "label": "table",
+          "ok": true,
+          "id": "-",
+          "note": ""
+        },
+        {
+          "expected": "unchanged",
+          "label": "cabinet",
+          "ok": true,
+          "id": "-",
+          "note": ""
+        },
+        {
+          "expected": "unchanged",
+          "label": "shelf",
+          "ok": true,
+          "id": "-",
+          "note": ""
+        }
+      ],
+      "passed": 11,
+      "total": 11,
+      "false_positives": []
+    }
+  }
+}

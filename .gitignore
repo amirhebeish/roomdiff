@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+runs/
+third_party/
+viewer/node_modules/
+examples/*/pointclouds/
+examples/*/cache/
+.DS_Store
